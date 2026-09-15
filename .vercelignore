@@ -1,0 +1,7 @@
+# Não publicar na Vercel (dados pessoais / internos)
+Profile.pdf
+.git
+README.md
+CNAME
+.github
+.DS_Store

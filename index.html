@@ -12,9 +12,32 @@
   <link rel="preconnect" href="https://embed.tawk.to" />
   <link rel="dns-prefetch" href="https://embed.tawk.to" />
   <link rel="preload" href="fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="styles.css" as="style" />
-  <link rel="stylesheet" href="styles.css" />
   <link rel="preload" href="vertical-cor-light.png" as="image" />
+  <link rel="preload" href="styles.css" as="style" />
+  <style>
+  @font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/Inter-Variable.woff2) format('woff2')}
+  :root{--black:#000000;--navy:#05080f;--navy2:#0a1120;--blue:#0f56ff;--blue-dark:#0a3fd1;--green:#00d19a;--green-dark:#00a87c;--white:#ffffff;--gray:#a8b0c0;--light:#f4f6fb;--card:#ffffff;--border:#e6eaf2;--radius:18px;--shadow:0 20px 60px rgba(15,86,255,.14)}
+  *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:#0d1526;background:var(--white);line-height:1.6}
+  .container{max-width:1180px;margin:0 auto;padding:0 24px}
+  h1{font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.05;letter-spacing:-.03em;font-weight:900;color:#fff}
+  h2{font-size:clamp(1.6rem,3.4vw,2.5rem);line-height:1.15;letter-spacing:-.02em;font-weight:800;margin:12px 0 10px;color:#fff}
+  .header{position:sticky;top:0;z-index:50;background:rgba(0,0,0,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;gap:16px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .brand-logo{width:72px;height:72px;object-fit:contain;border-radius:12px;background:transparent;mix-blend-mode:screen}
+  .brand-text strong{color:#fff;font-size:1rem;letter-spacing:.02em}
+  .brand-text strong span{color:var(--green)}
+  .brand-text small{display:block;color:#8b94a8;font-size:.72rem}
+  .hero{background:radial-gradient(900px 400px at 15% 0%,rgba(15,86,255,.28),transparent),radial-gradient(700px 380px at 90% 20%,rgba(0,209,154,.18),transparent),var(--black);color:#fff;padding:64px 0 54px}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:start}
+  .badge{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;color:#dbe4ff;background:rgba(15,86,255,.14);border:1px solid rgba(15,86,255,.35);padding:8px 14px;border-radius:100px;margin-bottom:18px}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(0,209,154,.2)}
+  .btn{display:inline-block;text-decoration:none;font-weight:800;border-radius:12px;padding:12px 22px;transition:.2s;border:1px solid transparent;cursor:pointer;font-size:.95rem}
+  .btn-accent{background:var(--green);color:#03251b;box-shadow:0 12px 30px rgba(0,209,154,.35)}
+  .float-wa{position:fixed;right:24px;bottom:100px;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.7rem;text-decoration:none;box-shadow:0 14px 34px rgba(0,0,0,.3);z-index:99999}
+  </style>
+  <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",

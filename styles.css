@@ -27,7 +27,8 @@ h2{font-size:clamp(1.6rem,3.4vw,2.5rem);line-height:1.15;letter-spacing:-.02em;f
 h3{font-size:1.15rem;font-weight:700;color:#0d1526}
 
 .grad{background:linear-gradient(90deg,#fff 10%,var(--green));-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
-.hl{background:linear-gradient(90deg,#fff,var(--green));-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.hl{background:linear-gradient(90deg,var(--blue),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.section.dark .hl{background:linear-gradient(90deg,#fff,var(--green))}
 
 .tag{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);background:rgba(15,86,255,.09);border:1px solid rgba(15,86,255,.22);padding:7px 14px;border-radius:100px;margin-bottom:6px}
 .tag.green{color:var(--green);background:rgba(0,209,154,.1);border-color:rgba(0,209,154,.35)}
@@ -41,7 +42,7 @@ h3{font-size:1.15rem;font-weight:700;color:#0d1526}
 .brand-logo.sm{width:56px;height:56px}
 .brand-text strong{color:#fff;font-size:1rem;letter-spacing:.02em}
 .brand-text strong span{color:var(--green)}
-.brand-text small{display:block;color:#8b94a8;font-size:.72rem}
+.brand-text small{display:block;color:#a0adc0;font-size:.78rem}
 .nav{display:flex;align-items:center;gap:22px}
 .nav a{color:#dbe1ee;text-decoration:none;font-weight:600;font-size:.92rem}
 .nav a:hover{color:var(--green)}
@@ -56,8 +57,8 @@ h3{font-size:1.15rem;font-weight:700;color:#0d1526}
 .btn-primary:hover{background:var(--blue-dark);transform:translateY(-1px)}
 .btn-accent{background:var(--green);color:#03251b;box-shadow:0 12px 30px rgba(0,209,154,.35)}
 .btn-accent:hover{background:#00e6a8;transform:translateY(-1px)}
-.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.25)}
-.btn-ghost:hover{border-color:var(--green);color:var(--green)}
+.btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.45)}
+.btn-ghost:hover{border-color:var(--green);color:var(--green);background:rgba(0,209,154,.08)}
 
 /* hero */
 .hero{background:radial-gradient(900px 400px at 15% 0%,rgba(15,86,255,.28),transparent),radial-gradient(700px 380px at 90% 20%,rgba(0,209,154,.18),transparent),var(--black);color:#fff;padding:64px 0 54px}
@@ -70,12 +71,12 @@ h3{font-size:1.15rem;font-weight:700;color:#0d1526}
 .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
 .hero-proof{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;border-top:1px solid rgba(255,255,255,.1);padding-top:18px}
 .hero-proof strong{display:block;font-size:1.05rem;color:#fff}
-.hero-proof span{font-size:.78rem;color:#8b94a8}
+.hero-proof span{font-size:.78rem;color:#a0adc0}
 .hero-card{background:linear-gradient(180deg,#0d1526,#070c17);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:24px;box-shadow:var(--shadow)}
 .hero-card-head{display:flex;gap:12px;align-items:center;margin-bottom:16px}
 .hero-card-head img{width:64px;height:64px;object-fit:contain;border-radius:14px;background:transparent;mix-blend-mode:screen;border:1px solid rgba(255,255,255,.12)}
 .hero-card-head strong{display:block;font-size:.98rem;color:#fff}
-.hero-card-head small{color:#8b94a8;font-size:.78rem}
+.hero-card-head small{color:#a0adc0;font-size:.8rem}
 .check-list{list-style:none;display:grid;gap:10px;margin:0 0 16px}
 .check-list li{position:relative;padding-left:28px;font-size:.92rem;color:#dbe1ee}
 .check-list li::before{content:'✓';position:absolute;left:0;top:0;width:20px;height:20px;border-radius:50%;background:rgba(0,209,154,.15);color:var(--green);font-weight:900;display:flex;align-items:center;justify-content:center;font-size:.75rem}
@@ -113,7 +114,7 @@ h3{font-size:1.15rem;font-weight:700;color:#0d1526}
 .about-card{background:#0d1526;border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:28px;text-align:center}
 .about-card img{width:140px;height:140px;object-fit:contain;border-radius:24px;background:transparent;mix-blend-mode:screen;margin-bottom:12px;border:2px solid var(--blue)}
 .about-card strong{display:block;color:#fff;font-size:1.1rem}
-.about-card small{color:#8b94a8}
+.about-card small{color:#a0adc0}
 .about-contact{display:grid;gap:8px;margin-top:16px}
 .about-contact a{color:var(--green);text-decoration:none;font-weight:700;font-size:.9rem;word-break:break-all}
 

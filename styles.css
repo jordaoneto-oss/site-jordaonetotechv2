@@ -97,8 +97,8 @@ h2{font-size:clamp(1.6rem,3.4vw,2.5rem);line-height:1.15;letter-spacing:-.02em;f
 .section.dark{background:var(--navy);color:#dbe1ee}
 .section.dark .sub{color:#9aa5bd}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:26px;position:relative;transition:.2s}
-.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--blue)}
+.card{background:var(--card);border:2px solid var(--blue);border-radius:var(--radius);padding:26px;position:relative;transition:.2s;background:linear-gradient(180deg,#fff,#eef3ff)}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
 .card.featured{border:2px solid var(--blue);background:linear-gradient(180deg,#fff,#eef3ff)}
 .card-num{font-size:.78rem;font-weight:900;color:var(--green);background:#03251b;display:inline-block;padding:4px 10px;border-radius:100px;margin-bottom:12px}
 .card h3{font-size:1.15rem;margin-bottom:8px}

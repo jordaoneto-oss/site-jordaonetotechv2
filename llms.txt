@@ -1,39 +1,24 @@
 # Jordão Neto Tech
 
-> Consultoria especializada em E-commerce Omnichannel, Integrações ERP/CRM, Automação com IA, Agile Coaching e OKRs. Soluções que geram resultado mensurável para empresas que querem escalar operações.
+> Consultoria especializada em E-commerce Omnichannel, Integrações ERP/CRM, Automação com IA, Agile Coaching e OKRs.
 
 ## Serviços
 
-- **E-commerce Omnichannel** — Integrações VTEX, Mercado Livre, Amazon. Sincronia de estoque, pedido e cliente entre ERP e marketplaces. Operações B2B e B2C.
-- **Integrações e Automação com IA** — APIs REST e middleware para conectar ERP, CRM, e-commerce e atendimento. Agentes de IA para classificação de tickets, chatbots e extração de dados.
-- **Produtos Digitais** — Discovery, roadmap, MVP e gestão de squad. Product Owner fracionado com foco em receita e experiência do cliente.
-- **Dados, BI e OKRs** — Dashboards, KPIs e governança de dados. Power BI, EasyBI, Metabase. Planejamento e acompanhamento de OKRs.
-- **Agilidade e Alta Performance** — Scrum, Kanban, Lean. Agile coaching para times e lideranças. Transformação cultural e melhoria contínua.
-- **Treinamento e Mentoria** — Workshops, treinamentos in-company e mentoria individual para POs, SMs, Tech Leads e líderes.
+- [E-commerce Omnichannel](https://www.jordaonetotech.com.br/ecommerce-omnichannel.html) — Integrações VTEX, Mercado Livre, Amazon. Sincronia de estoque, pedido e cliente entre ERP e marketplaces.
+- [Integrações e Automação com IA](https://www.jordaonetotech.com.br/integracoes-ia.html) — APIs REST, middleware e agentes de IA para conectar ERP, CRM e atendimento.
+- [Produtos Digitais](https://www.jordaonetotech.com.br/produtos-digitais.html) — Discovery, roadmap, MVP e gestão de squad com foco em receita.
+- [Dados, BI e OKRs](https://www.jordaonetotech.com.br/dados-bi-okrs.html) — Dashboards, KPIs, governança de dados e planejamento estratégico.
+- [Agilidade e Alta Performance](https://www.jordaonetotech.com.br/agilidade-alta-performance.html) — Scrum, Kanban, Lean e agile coaching para times e lideranças.
+- [Treinamento e Mentoria](https://www.jordaonetotech.com.br/treinamento-mentoria.html) — Workshops, treinamentos in-company e mentoria individual.
 
-## Sobre
+## Contato
 
-- **Empresa**: Jordão Neto Tech (Jordão Neto Consultoria em Tecnologia Ltda)
-- **Especialidade**: E-commerce Omnichannel, Integrações ERP/CRM, Automação com IA
-- **Experiência**: +20 anos em TI, varejo e tecnologia
-- **Contato**: jordao@jordaonetotech.com.br | (16) 99122-2972
-- **Site**: https://www.jordaonetotech.com.br
-- **Localização**: Brasil (remoto)
+- Site: [jordaonetotech.com.br](https://www.jordaonetotech.com.br)
+- WhatsApp: [(16) 99122-2972](https://wa.me/5516991222972)
+- E-mail: [jordao@jordaonetotech.com.br](mailto:jordao@jordaonetotech.com.br)
 
-## Áreas de atuação
+## Empresa
 
-- E-commerce e marketplaces (VTEX, Mercado Livre, Amazon)
-- Integrações ERP (SAP, Protheus, TOTVS, Mini Sistemas)
-- CRM e omnichannel (Salesforce, RD Station, HubSpot)
-- Automação com IA e agentes inteligentes
-- Agile coaching e transformação ágil
-- OKRs e gestão de dados
-
-## Tecnologias
-
-- VTEX, Mercado Livre, Amazon, Magalu
-- SAP, Protheus, TOTVS, Mini Sistemas
-- APIs REST, webhooks, middlewares
-- Power BI, EasyBI, Metabase
-- Scrum, Kanban, Lean, Kaizen
-- TMS, WMS, ERPs de varejo
+- Jordão Neto Tech — Consultoria Digital
+- +20 anos de experiência em TI, varejo e tecnologia
+- Brasil (remoto)

@@ -21,10 +21,10 @@ html{scroll-behavior:smooth}
 body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:#0d1526;background:var(--white);line-height:1.6}
 .container{max-width:1180px;margin:0 auto;padding:0 24px}
 .center{text-align:center}.muted{color:var(--gray);font-size:.85rem}.white{color:#fff}
-h1{font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.05;letter-spacing:-.03em;font-weight:900}
+h1{font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.05;letter-spacing:-.03em;font-weight:900;color:var(--white)}
 h2{font-size:clamp(1.6rem,3.4vw,2.5rem);line-height:1.15;letter-spacing:-.02em;font-weight:800;margin:12px 0 10px}
 .grad{background:linear-gradient(90deg,var(--blue),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hl{background:linear-gradient(90deg,var(--blue),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hl{background:linear-gradient(90deg,#fff,var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
 .tag{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);background:rgba(15,86,255,.09);border:1px solid rgba(15,86,255,.22);padding:7px 14px;border-radius:100px;margin-bottom:6px}
 .tag.green{color:var(--green);background:rgba(0,209,154,.1);border-color:rgba(0,209,154,.35)}
 .sub{color:#4a5872;max-width:720px;margin:6px 0 26px}

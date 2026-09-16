@@ -4,7 +4,7 @@
 
 ## Serviços
 
-- [E-commerce Omnichannel](https://www.jordaonetotech.com.br/ecommerce-omnichannel.html) — Integrações VTEX, Mercado Livre, Amazon. Sincronia de estoque, pedido e cliente entre ERP e marketplaces.
+- [Operações Omnichannel](https://www.jordaonetotech.com.br/ecommerce-omnichannel.html) — Integração de canais de venda, marketplaces e operações digitais. Sincronia de estoque, pedido e cliente entre sistemas.
 - [Integrações e Automação com IA](https://www.jordaonetotech.com.br/integracoes-ia.html) — APIs REST, middleware e agentes de IA para conectar ERP, CRM e atendimento.
 - [Produtos Digitais](https://www.jordaonetotech.com.br/produtos-digitais.html) — Discovery, roadmap, MVP e gestão de squad com foco em receita.
 - [Dados, BI e OKRs](https://www.jordaonetotech.com.br/dados-bi-okrs.html) — Dashboards, KPIs, governança de dados e planejamento estratégico.

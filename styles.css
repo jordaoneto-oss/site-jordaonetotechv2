@@ -159,7 +159,7 @@ h2{font-size:clamp(1.6rem,3.4vw,2.5rem);line-height:1.15;letter-spacing:-.02em;f
 .footer a{display:block;color:#9aa5bd;text-decoration:none;font-size:.9rem;margin-bottom:6px}
 .footer a:hover{color:var(--green)}
 .copy{border-top:1px solid rgba(255,255,255,.1);padding:16px 24px;text-align:center;font-size:.8rem}
-.float-wa{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.7rem;text-decoration:none;box-shadow:0 14px 34px rgba(0,0,0,.3);z-index:60}
+.float-wa{position:fixed;left:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.7rem;text-decoration:none;box-shadow:0 14px 34px rgba(0,0,0,.3);z-index:60}
 
 @media(max-width:960px){
   .hero-grid,.grid-3,.about-grid,.contact-grid{grid-template-columns:1fr}

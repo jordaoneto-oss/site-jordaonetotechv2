@@ -1,45 +1,154 @@
 # Jordão Neto Tech — www.jordaonetotech.com.br
 
-Site institucional estático (HTML + CSS + JS, sem build).
+Site institucional estático (HTML + CSS + JS puro, sem build).
 
-**Identidade:** cores do logo `vertical-cor-light.png`
-- Fundo `#000000` • Azul JN `#0F56FF` • Verde `#00D19A`
+## Sobre
 
-**Contatos:**
-- E-mail: jordao@jordaonetotech.com.br
-- WhatsApp: (16) 99122-2972 → https://wa.me/5516991222972
-- Site: https://www.jordaonetotech.com.br
+Site da **Jordão Neto Tech**, consultoria especializada em E-commerce Omnichannel, Integrações ERP/CRM, Automação com IA, Agile Coaching e OKRs. Página única responsiva com chat ao vivo (Tawk.to) e botão flutuante de WhatsApp.
 
-## Publicar no GitHub Pages (conta jordaoneto-oss)
+## Contatos
 
-1. Crie o repo no GitHub: https://github.com/new
-   - Owner: `jordaoneto-oss`
-   - Name: `site-jordaonetotechv2`
-   - Public, sem README inicial
-2. No terminal, nesta pasta:
+| Canal | Informação |
+|---|---|
+| E-mail | jordao@jordaonetotech.com.br |
+| WhatsApp | (16) 99122-2972 |
+| Site | https://www.jordaonetotech.com.br |
+| GitHub | https://github.com/jordaoneto-oss/site-jordaonetotechv2 |
+| Vercel | https://site-jordaonetotechv2.vercel.app |
+
+## Identidade Visual
+
+Cores extraídas do logo `vertical-cor-light.png`:
+
+| Cor | Código | Uso |
+|---|---|---|
+| Preto | `#000000` | Fundo (hero, header, footer) |
+| Azul JN | `#0F56FF` | Botões, links, cards destaque |
+| Verde | `#00D19A` | Acentos, CTAs, selos |
+| Branco | `#FFFFFF` | Texto principal, fundo das seções claras |
+| Cinza | `#A8B0C0` | Texto secundário |
+
+Tipografia: **Inter** (Google Fonts, pesos 400–900).
+
+## Estrutura de Arquivos
+
+```
+Novo site Jordao Neto Tech/
+├── index.html                          → página única
+├── styles.css                          → tema + responsivo
+├── script.js                           → menu mobile + formulário → WhatsApp
+├── vertical-cor-light.png              → logo (favicon + conteúdo)
+├── vercel.json                         → config deploy Vercel (headers, cache)
+├── .vercelignore                       → arquivos ignorados pela Vercel
+├── CNAME                               → domínio customizado (GitHub Pages)
+├── .nojekyll                           → desabilita Jekyll no GitHub Pages
+├── .gitignore                          → arquivos ignorados pelo Git
+├── .github/workflows/deploy-pages.yml  → CI/CD para GitHub Pages
+├── README.md                           → esta documentação
+└── Profile.pdf                         → CV interno (não versionado)
+```
+
+## Seções do Site
+
+| Seção | Descrição |
+|---|---|
+| **Header** | Logo + menu navegação + CTA diagnóstico |
+| **Hero** | Título, proposta de valor, botões WhatsApp + serviços, prova social |
+| **Marquee** | Faixa animada com palavras-chave (Scrum, Kanban, E-commerce, etc.) |
+| **Serviços** | 6 cards: E-commerce, Integrações/IA, PO Fracionado, BI/OKRs, Agilidade, Treinamentos |
+| **Como trabalhamos** | 4 etapas: Diagnóstico → Assessment → Execução → Sustentação |
+| **Sobre** | Texto corporativo + card de contato |
+| **Contato** | WhatsApp, e-mail, site + formulário de proposta |
+| **Footer** | Logo, serviços, contatos, copyright |
+| **Chat** | Tawk.to (canto inferior esquerdo) + WhatsApp float (canto inferior direito, acima do chat) |
+
+## Stack
+
+- **HTML5** semântico
+- **CSS3** com variáveis CSS, Grid, Flexbox, clamp()
+- **JavaScript** vanilla (menu mobile + formulário)
+- **Google Fonts** (Inter)
+- **Tawk.to** chat ao vivo (script embed)
+- **WhatsApp API** (wa.me)
+
+## Deploy
+
+### Vercel (produção)
+
+- **Domínio**: https://www.jordaonetotech.com.br
+- **Projeto Vercel**: `site-jordaonetotechv2`
+- **Conta**: `jordao-neto-tech-s-projects`
+- **Deploy automático**: push em `main` no GitHub → Vercel redeploya
+- **Config DNS** (Registro.br):
+  - `www` CNAME → `cname.vercel-dns.com`
+  - `@` A → `76.76.21.21`
+
+### GitHub Pages (backup)
+
+- **Repo**: https://github.com/jordaoneto-oss/site-jordaonetotechv2
+- **Workflow**: `.github/workflows/deploy-pages.yml`
+- **Ativar**: repo → Settings → Pages → Source: GitHub Actions
+
+## Como Editar
+
+### Alterar textos
+Edite `index.html`. Todos os textos estão em português, voz corporativa (empresa, não pessoa).
+
+### Alterar cores
+Edite as variáveis CSS no topo de `styles.css`:
+```css
+--blue:#0f56ff;    /* azul JN */
+--green:#00d19a;   /* verde */
+--black:#000000;   /* fundo */
+```
+
+### Alterar logo
+Substitua `vertical-cor-light.png` por nova imagem. Mantenha o mesmo nome.
+
+### Adicionar serviço
+复制 um dos `<article class="card">` na seção de serviços e ajuste título, descrição e link.
+
+### Alterar WhatsApp
+Substitua `5516991222972` em todos os links `wa.me/` do `index.html`.
+
+### Alterar e-mail
+Substitua `jordao@jordaonetotech.com.br` em todos os links `mailto:` do `index.html`.
+
+### Alterar Tawk.to
+Substitua o Site ID no `<script>` antes do `</body>` no `index.html`. Configurações adicionais no painel: https://dashboard.tawk.to
+
+## Comandos Úteis
+
 ```bash
-git init -b main
-git add index.html styles.css script.js CNAME .nojekyll .gitignore README.md vertical-cor-light.png .github/workflows/deploy-pages.yml
-git commit -m "feat: site institucional Jordão Neto Tech"
-git remote add origin https://github.com/jordaoneto-oss/site-jordaonetotechv2.git
-git push -u origin main
-```
-3. Ative o Pages: repo → Settings → Pages → Source: **GitHub Actions**
-4. O workflow `.github/workflows/deploy-pages.yml` publica automaticamente a cada push em `main`.
-5. Domínio próprio: o arquivo `CNAME` já contém `www.jordaonetotech.com.br`.
-   No DNS (Registro.br / hospedagem), crie:
-   - `www` → CNAME → `jordaoneto-oss.github.io`
-   - apex `@` → A → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   Depois marque **Enforce HTTPS** em Settings → Pages.
+# Abrir site localmente
+python3 -m http.server 8000
+# Acessar http://localhost:8000
 
-## Estrutura
-```
-index.html                  → página única (hero, serviços, experiência, sobre, contato)
-styles.css                  → tema dark do logo
-script.js                   → menu mobile + formulário → WhatsApp
-vertical-cor-light.png      → logo
-CNAME                       → domínio customizado
-.github/workflows/         → deploy Pages
+# Deploy manual na Vercel
+npx vercel --prod
+
+# Verificar DNS do domínio
+npx vercel domains verify www.jordaonetotech.com.br
+
+# Ver log de commits
+git log --oneline -10
 ```
 
-> `Profile.pdf` está no `.gitignore` e **não** é publicado (contém dados pessoais).
+## Checklist de Deploy
+
+- [ ] Textos revisados em voz corporativa
+- [ ] Links WhatsApp funcionando
+- [ ] Links e-mail funcionando
+- [ ] Formulário enviando para WhatsApp
+- [ ] Chat Tawk.to ativo e visível
+- [ ] WhatsApp float sem sobreposição com chat
+- [ ] Responsivo (mobile, tablet, desktop)
+- [ ] SSL ativo (HTTPS)
+- [ ] Domínio apontando para Vercel
+- [ ] `Profile.pdf` no `.gitignore` (não publicado)
+
+## Segurança
+
+- `Profile.pdf` está no `.gitignore` — contém dados pessoais, nunca é versionado
+- Tokens de deploy devem ser revogados após uso
+- Nunca committar chaves, senhas ou tokens no repositório

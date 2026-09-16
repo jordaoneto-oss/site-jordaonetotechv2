@@ -101,7 +101,7 @@ h3{font-size:1.18rem;font-weight:700;color:#0d1526}
 .section.dark{background:linear-gradient(180deg,#050b14 0%,#091421 100%);color:#dbe1ee}
 .section.dark h2{color:#fff}
 .section.dark .sub{color:#9aa5bd}
-.about-grid h2 .hl{background:none;color:var(--green);-webkit-text-fill-color:var(--green)}
+#como-trabalho h2 .hl{background:none;color:#fff;-webkit-text-fill-color:#fff}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:linear-gradient(180deg,#fff,#f4f8ff);border:1px solid var(--border);border-radius:var(--radius);padding:26px;position:relative;transition:.2s;box-shadow:0 10px 24px rgba(15,86,255,.05)}
 .card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(15,86,255,.35)}
@@ -159,7 +159,8 @@ h3{font-size:1.18rem;font-weight:700;color:#0d1526}
 .copy{border-top:1px solid rgba(255,255,255,.1);padding:16px 24px;text-align:center;font-size:.8rem}
 .float-wa{position:fixed;right:24px;bottom:24px;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#25d366,#1abf59);color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 14px 34px rgba(0,0,0,.3);z-index:99999;pointer-events:auto;transition:transform .2s}
 .float-wa:hover{transform:scale(1.08)}
-.float-wa svg{width:30px;height:30px;fill:#fff}
+.float-wa svg{display:none}
+.float-wa::before{content:'';width:30px;height:30px;background:url('whatsapp-logo.svg') center/contain no-repeat}
 
 /* responsive */
 @media(max-width:960px){

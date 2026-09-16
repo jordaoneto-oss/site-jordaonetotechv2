@@ -1,0 +1,39 @@
+# Jordão Neto Tech
+
+> Consultoria especializada em E-commerce Omnichannel, Integrações ERP/CRM, Automação com IA, Agile Coaching e OKRs. Soluções que geram resultado mensurável para empresas que querem escalar operações.
+
+## Serviços
+
+- **E-commerce Omnichannel** — Integrações VTEX, Mercado Livre, Amazon. Sincronia de estoque, pedido e cliente entre ERP e marketplaces. Operações B2B e B2C.
+- **Integrações e Automação com IA** — APIs REST e middleware para conectar ERP, CRM, e-commerce e atendimento. Agentes de IA para classificação de tickets, chatbots e extração de dados.
+- **Produtos Digitais** — Discovery, roadmap, MVP e gestão de squad. Product Owner fracionado com foco em receita e experiência do cliente.
+- **Dados, BI e OKRs** — Dashboards, KPIs e governança de dados. Power BI, EasyBI, Metabase. Planejamento e acompanhamento de OKRs.
+- **Agilidade e Alta Performance** — Scrum, Kanban, Lean. Agile coaching para times e lideranças. Transformação cultural e melhoria contínua.
+- **Treinamento e Mentoria** — Workshops, treinamentos in-company e mentoria individual para POs, SMs, Tech Leads e líderes.
+
+## Sobre
+
+- **Empresa**: Jordão Neto Tech (Jordão Neto Consultoria em Tecnologia Ltda)
+- **Especialidade**: E-commerce Omnichannel, Integrações ERP/CRM, Automação com IA
+- **Experiência**: +20 anos em TI, varejo e tecnologia
+- **Contato**: jordao@jordaonetotech.com.br | (16) 99122-2972
+- **Site**: https://www.jordaonetotech.com.br
+- **Localização**: Brasil (remoto)
+
+## Áreas de atuação
+
+- E-commerce e marketplaces (VTEX, Mercado Livre, Amazon)
+- Integrações ERP (SAP, Protheus, TOTVS, Mini Sistemas)
+- CRM e omnichannel (Salesforce, RD Station, HubSpot)
+- Automação com IA e agentes inteligentes
+- Agile coaching e transformação ágil
+- OKRs e gestão de dados
+
+## Tecnologias
+
+- VTEX, Mercado Livre, Amazon, Magalu
+- SAP, Protheus, TOTVS, Mini Sistemas
+- APIs REST, webhooks, middlewares
+- Power BI, EasyBI, Metabase
+- Scrum, Kanban, Lean, Kaizen
+- TMS, WMS, ERPs de varejo

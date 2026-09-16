@@ -28,15 +28,15 @@
       "E-commerce Omnichannel",
       "Integrações ERP/CRM",
       "Automação com IA",
-      "Product Owner Fracionado",
+      "Produtos Digitais",
       "Agile Coaching",
       "OKRs e Gestão de Dados"
-    ],
-    "sameAs": []
+    ]
   }
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <!-- HEADER -->
   <header class="header" id="topo">
     <div class="container header-inner">
@@ -53,15 +53,16 @@
         <a href="#sobre">Sobre</a>
         <a href="#contato" class="btn btn-sm btn-primary">Diagnóstico gratuito</a>
       </nav>
-      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">☰</button>
     </div>
   </header>
-  <main>
+  <main id="conteudo">
 
   <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
+        <span class="badge"><span class="dot" aria-hidden="true"></span>Consultoria • E-commerce • IA • Agilidade</span>
         <h1>Operações que vendem<br />e escalam <span class="grad">com IA e Agilidade.</span></h1>
         <p class="lead">Conectamos <strong>negócio, tecnologia e dados</strong>: roadmap e backlog que geram receita, integração ERP • CRM • VTEX • atendimento, camada de BI e automações, e times ágeis de alta performance.</p>
         <div class="hero-cta">
@@ -90,13 +91,13 @@
         <div class="stack">
           <span>ERP</span><span>CRM</span><span>Omnichannel</span><span>APIs REST</span><span>IA</span><span>BI</span><span>TMS</span><span>WMS</span>
         </div>
-        <a class="btn btn-accent btn-block" href="mailto:jordao@jordaonetotech.com.br?subject=Diagn%C3%B3stico%20gratuito%20-%20Jord%C3%A3o%20Neto%20Tech">Fale conosco</a>
+        <a class="btn btn-accent btn-block" href="https://wa.me/5516991222972?text=Ol%C3%A1!%20Vim%20pelo%20site%20jordaonetotech.com.br%20e%20quero%20um%20diagn%C3%B3stico%20gratuito." target="_blank" rel="noopener">Chamar no WhatsApp</a>
       </div>
     </div>
   </section>
 
   <!-- MARQUEE -->
-  <div class="marquee">
+  <div class="marquee" aria-hidden="true">
     <div class="container marquee-inner">
       <span>SCRUM</span><i></i><span>KANBAN</span><i></i><span>E-COMMERCE</span><i></i><span>OMNICHANNEL</span><i></i><span>INTEGRAÇÕES API</span><i></i><span>BI & DADOS</span><i></i><span>OKRs</span><i></i><span>ALTA PERFORMANCE</span>
     </div>
@@ -182,6 +183,11 @@
           <a href="treinamento-mentoria.html">Saiba mais →</a>
         </article>
       </div>
+
+      <div class="section-cta">
+        <a class="btn btn-primary btn-lg" href="https://wa.me/5516991222972?text=Ol%C3%A1!%20Vim%20pelo%20site%20jordaonetotech.com.br%20e%20quero%20um%20diagn%C3%B3stico%20gratuito." target="_blank" rel="noopener">Falar com especialista</a>
+        <a class="btn btn-lg" href="#contato" style="border:2px solid var(--blue);color:var(--blue)">Pedir diagnóstico gratuito</a>
+      </div>
     </div>
   </section>
 
@@ -195,6 +201,9 @@
         <div class="step"><strong>2. Assessment + Plano</strong><p>1 semana: processos, integrações, backlog e métricas. Proposta fechada com escopo, prazo e ROI esperado.</p></div>
         <div class="step"><strong>3. Execução em sprints</strong><p>Discovery + delivery com cerimônias ágeis e review semanal. Você acompanha valor entregue, não relatório.</p></div>
         <div class="step"><strong>4. Sustentação e evolução</strong><p>Mensalidade de PO/Agilidade/BI ou sustentação TI. Time autônomo, operação previsível.</p></div>
+      </div>
+      <div class="section-cta">
+        <a class="btn btn-accent btn-lg" href="#contato">Agendar diagnóstico gratuito</a>
       </div>
     </div>
   </section>
@@ -237,15 +246,17 @@
           </a>
           <div class="c-card site">
             <strong>www.jordaonetotech.com.br</strong>
+            <span>Atendimento em todo o Brasil →</span>
           </div>
         </div>
       </div>
       <form class="form" id="leadForm">
         <h3>Peça proposta em 1 minuto</h3>
-        <label>Nome<input required name="nome" placeholder="Seu nome" /></label>
-        <label>WhatsApp / E-mail<input required name="contato" placeholder="(16) 9xxxx-xxxx ou seu e-mail" /></label>
-        <label>O que você precisa?
-          <select name="servico">
+        <label for="f-nome">Nome<input id="f-nome" required name="nome" placeholder="Seu nome" autocomplete="name" maxlength="80" /></label>
+        <label for="f-contato">WhatsApp / E-mail<input id="f-contato" required name="contato" placeholder="(16) 9xxxx-xxxx ou seu e-mail" autocomplete="tel" inputmode="tel" maxlength="120" /></label>
+        <label for="f-servico">O que você precisa?
+          <select id="f-servico" name="servico">
+            <option value="" selected>Selecione um serviço...</option>
             <option>E-commerce Omnichannel</option>
             <option>Integrações / Automação / IA</option>
             <option>Produtos Digitais</option>
@@ -254,9 +265,9 @@
             <option>Treinamento / Mentoria</option>
           </select>
         </label>
-        <label>Descreva seu desafio<textarea name="msg" rows="4" placeholder="Me conte como posso transformar suas ideias em valor para seu negócio"></textarea></label>
-        <label>Como nos conheceu?
-          <select name="origem">
+        <label for="f-msg">Descreva seu desafio<textarea id="f-msg" name="msg" rows="4" maxlength="1000" placeholder="Me conte como posso transformar suas ideias em valor para seu negócio"></textarea></label>
+        <label for="f-origem">Como nos conheceu?
+          <select id="f-origem" name="origem">
             <option>Google</option>
             <option>LinkedIn</option>
             <option>Indicação</option>
@@ -277,7 +288,7 @@
           <img src="vertical-cor-light.png" alt="Jordão Neto Tech" class="brand-logo sm" loading="lazy" />
           <div class="brand-text"><strong>JORDÃO NETO <span>TECH</span></strong><small>Produtos • E-commerce • IA • Agilidade</small></div>
         </div>
-        <p class="muted">Produtos • E-commerce • IA • Agilidade</p>
+        <p class="muted">Consultoria em produtos digitais, e-commerce omnichannel e IA.</p>
       </div>
       <div>
         <strong>Serviços</strong>
@@ -296,7 +307,7 @@
     <div class="container copy">© 2026 Jordão Neto Tech • Todos os direitos reservados</div>
   </footer>
 
-  <a class="float-wa" href="https://wa.me/5516991222972?text=Ol%C3%A1!%20Vim%20pelo%20site." target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+  <a class="float-wa" href="https://wa.me/5516991222972?text=Ol%C3%A1!%20Vim%20pelo%20site." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.9c1.8 1 3.9 1.5 6 1.5h.3c6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-4.6 1.1 1.2-4.5-.3-.4c-1-1.6-1.5-3.4-1.5-5.3C5.3 9.2 10.1 4.5 16 4.5S26.7 9.2 26.7 15 21.9 24.8 16 24.8zm5.5-7.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5L14.4 9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.2-.7.7-.2.5-.9 2.1-.9 4.4 0 2.3 1.6 4.5 1.9 4.8.2.3 3.2 4.9 7.8 6.9 1.1.5 1.9.7 2.6.9.9.3 2 .3 2.8.2.9-.1 2.8-1.1 3.1-2.2.4-1.1.4-2 .3-2.2-.1-.2-.4-.3-.7-.5z"/></svg></a>
 
   <script src="script.js" defer></script>
 

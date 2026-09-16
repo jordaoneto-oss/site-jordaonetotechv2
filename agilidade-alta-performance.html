@@ -22,12 +22,13 @@
     .lp-hero{padding:100px 0 60px;background:var(--navy);text-align:center}
     .lp-hero h1{font-size:clamp(2rem,4vw,3rem);margin-bottom:16px}
     .lp-hero p{color:var(--gray);font-size:1.15rem;max-width:640px;margin:0 auto 32px}
+    .lp-hero .grad{background:linear-gradient(90deg,#fff,var(--green));-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
     .lp-section{padding:80px 0}
     .lp-section.dark{background:var(--light)}
     .lp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:40px}
     .lp-card{background:var(--card);border:2px solid var(--blue);border-radius:var(--radius);padding:28px}
     .lp-card h3{font-size:1.1rem;margin-bottom:8px}
-    .lp-card p{color:#4a5872;font-size:.95rem}
+    .lp-card p{color:#3a4a62;font-size:.95rem}
     .lp-bullets{list-style:none;margin:16px 0 0;display:grid;gap:8px}
     .lp-bullets li{font-size:.9rem;color:#2b3648;padding-left:20px;position:relative}
     .lp-bullets li::before{content:"✓";color:var(--green);font-weight:700;position:absolute;left:0}
@@ -45,12 +46,13 @@
           <small>www.jordaonetotech.com.br</small>
         </div>
       </a>
-      <nav class="nav">
+      <nav class="nav" id="nav">
         <a href="index.html#servicos">Serviços</a>
         <a href="index.html#como-trabalho">Como trabalhamos</a>
         <a href="index.html#sobre">Sobre</a>
         <a class="btn btn-accent" href="https://wa.me/5516991222972?text=Ol%C3%A1!%20Vim%20pelo%20site." target="_blank" rel="noopener">Diagnóstico gratuito</a>
       </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">☰</button>
     </div>
   </header>
 
@@ -127,7 +129,7 @@
   </section>
 
   <footer class="footer">
-    <div class="container footer-inner">
+    <div class="container footer-grid">
       <div>
         <strong>Jordão Neto Tech</strong>
         <small>Agilidade • Coaching • Transformação</small>
@@ -140,6 +142,7 @@
     <div class="container copy">© 2026 Jordão Neto Tech • Todos os direitos reservados</div>
   </footer>
 
-  <a class="float-wa" href="https://wa.me/5516991222972?text=Ol%C3%A1!%20Vim%20pelo%20site." target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+  <a class="float-wa" href="https://wa.me/5516991222972?text=Ol%C3%A1!%20Vim%20pelo%20site." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.9c1.8 1 3.9 1.5 6 1.5h.3c6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-4.6 1.1 1.2-4.5-.3-.4c-1-1.6-1.5-3.4-1.5-5.3C5.3 9.2 10.1 4.5 16 4.5S26.7 9.2 26.7 15 21.9 24.8 16 24.8zm5.5-7.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5L14.4 9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.2-.7.7-.2.5-.9 2.1-.9 4.4 0 2.3 1.6 4.5 1.9 4.8.2.3 3.2 4.9 7.8 6.9 1.1.5 1.9.7 2.6.9.9.3 2 .3 2.8.2.9-.1 2.8-1.1 3.1-2.2.4-1.1.4-2 .3-2.2-.1-.2-.4-.3-.7-.5z"/></svg></a>
+  <script src="script.js" defer></script>
 </body>
 </html>

@@ -16,7 +16,8 @@ if (form) {
     const contato = (data.get('contato') || '').toString();
     const servico = (data.get('servico') || '').toString();
     const msg = (data.get('msg') || '').toString();
-    const text = `Olá Jordão! Vim pelo site www.jordaonetotech.com.br\nNome: ${nome}\nContato: ${contato}\nServiço: ${servico}\nDesafio: ${msg}`;
+    const origem = (data.get('origem') || '').toString();
+    const text = `Olá! Vim pelo site www.jordaonetotech.com.br\nNome: ${nome}\nContato: ${contato}\nServiço: ${servico}\nDesafio: ${msg}\nComo nos conheceu: ${origem}`;
     window.open('https://wa.me/5516991222972?text=' + encodeURIComponent(text), '_blank');
   });
 }
